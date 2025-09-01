@@ -448,7 +448,7 @@ export default function ExMediaLanding() {
           }`}
       >
         <div
-          className={`container mx-auto px-6 py-4 flex items-center ${language === "ar" ? "justify-between flex-row-reverse" : "justify-between"}`}
+          className={`container px-6 py-4 flex items-center ${language === "ar" ? "justify-between flex-row-reverse" : "justify-between"}`}
         >
           <h1
             className={`text-2xl font-bold tracking-wider hover:scale-105 transition-transform duration-300 ${language === "ar" ? "font-arabic" : ""}`}
@@ -753,13 +753,13 @@ export default function ExMediaLanding() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" dir={`${language === "ar" ? "rtl" : "ltr"}`}>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 m-auto" dir={`${language === "ar" ? "rtl" : "ltr"}`}>
             {currentContent.services.items.map((service, index) => {
               const IconComponent = service.icon
               return (
                 <Card
                   key={index}
-                  className={`group relative overflow-hidden bg-gradient-to-br from-gray-800/100 to-gray-900/100 border-gray-700/100 hover:border-yellow-400/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 w-full max-w-sm ${visibleSections.has("services") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                  className={`group relative m-auto overflow-hidden bg-gradient-to-br from-gray-800/100 to-gray-900/100 border-gray-700/100 hover:border-yellow-400/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/25 w-full max-w-sm ${visibleSections.has("services") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
                     }`}
                   style={{
                     transitionDelay: `${600 + index * 150}ms`,
@@ -955,17 +955,17 @@ export default function ExMediaLanding() {
               >
                 {language === "ar" ? "اكس.ميديا" : "EX.MEDIA"}
               </h3>
-              <p className={`text-sm opacity-80 ${language === "ar" ? "font-arabic" : ""}`}>
+              <p className={`text-sm opacity-80 m-auto ${language === "ar" ? "font-arabic" : ""}`}>
                 {language === "ar"
                   ? "تحويل التجارب الرقمية من خلال حلول إعلامية مبتكرة"
                   : "Transforming digital experiences through innovative media solutions."}
               </p>
             </div>
-            <div className="w-[100%] overflow-hidden">
+            <div className="w-[100%] overflow-hidden m-auto">
               <h4 className={`font-semibold mb-4 text-primary ${language === "ar" ? "font-arabic" : ""}`}>
                 {language === "ar" ? "معلومات التواصل" : "Contact Info"}
               </h4>
-              <div dir="ltr" className={`space-y-2 overflow-hidden flex flex-col justify-center items-center ${language === "ar" ? "md:items-end" : "md:items-start"} m-0`}>
+              <div dir="ltr" className={`space-y-2 m-auto overflow-hidden flex flex-col justify-center items-center ${language === "ar" ? "md:items-end" : "md:items-start"} m-0`}>
                 <div
                   dir={language === "ar" ? "rtl" : "ltr"}
                   className={`flex items-center space-x-2`}

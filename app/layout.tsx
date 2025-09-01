@@ -2,6 +2,7 @@ import type React from "react"
 import { Cairo } from "next/font/google"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
+import ScrollToTop from "@/components/scroll-to-top"
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -29,7 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <ScrollToTop />
+      </body>
     </html>
   )
 }
