@@ -444,11 +444,11 @@ export default function ExMediaLanding() {
   return (
     <div className={`min-h-screen bg-background text-foreground ${language === "ar" ? "rtl font-arabic" : "ltr"}`}>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrollY > 50 ? "bg-background/90 backdrop-blur-xl shadow-2xl border-b border-primary/20" : "bg-transparent"
+        className={`fixed top-0 w-full z-50 overflow-hidden transition-all duration-500 ${scrollY > 50 ? "bg-background/90 backdrop-blur-xl shadow-2xl border-b border-primary/20" : "bg-transparent"
           }`}
       >
         <div
-          className={`container px-6 w-auto overflow-hidden py-4 flex items-center ${language === "ar" ? "justify-between flex-row-reverse" : "justify-between"}`}
+          className={`container px-6 m-auto py-4 flex items-center ${language === "ar" ? "justify-between flex-row-reverse" : "justify-between"}`}
         >
           <h1
             className={`text-2xl font-bold tracking-wider hover:scale-105 transition-transform duration-300 ${language === "ar" ? "font-arabic" : ""}`}
