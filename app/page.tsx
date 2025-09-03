@@ -448,7 +448,7 @@ export default function ExMediaLanding() {
           }`}
       >
         <div
-          className={`container px-6 py-4 flex items-center ${language === "ar" ? "justify-between flex-row-reverse" : "justify-between"}`}
+          className={`container px-6 w-auto overflow-hidden py-4 flex items-center ${language === "ar" ? "justify-between flex-row-reverse" : "justify-between"}`}
         >
           <h1
             className={`text-2xl font-bold tracking-wider hover:scale-105 transition-transform duration-300 ${language === "ar" ? "font-arabic" : ""}`}
@@ -664,7 +664,7 @@ export default function ExMediaLanding() {
       <section
         id="about"
         ref={aboutRef}
-        className={`py-20 px-6 transition-all duration-1000 ${visibleSections.has("about") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        className={`py-20 px-6 transition-all overflow-hidden duration-1000 ${visibleSections.has("about") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
       >
         <div className="container mx-auto max-w-6xl">
@@ -820,7 +820,7 @@ export default function ExMediaLanding() {
       <section
         ref={socialRef}
         id="social"
-        className={`py-20 px-6 bg-card transition-all duration-1000 delay-200 ${visibleSections.has("social") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        className={`py-20 px-6 bg-card transition-all overflow-hidden duration-1000 delay-200 ${visibleSections.has("social") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
       >
         <div className="container mx-auto max-w-6xl text-center">
@@ -874,7 +874,7 @@ export default function ExMediaLanding() {
       <section
         ref={locationRef}
         id="location"
-        className={`py-20 flex flex-col gap-10 bg-primary/10 px-6 transition-all duration-1000 delay-400 ${visibleSections.has("location") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        className={`py-20 flex flex-col gap-10 bg-primary/10 px-6 overflow-hidden transition-all duration-1000 delay-400 ${visibleSections.has("location") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
       >
 
