@@ -148,7 +148,7 @@ export default function ExMediaLanding() {
           {
             name: "IQ",
             profileImage: "/images/iq-page.jpg",
-            url: "https://www.facebook.com/photo/?fbid=693813509447653&set=a.181055330723476",
+            url: "https://www.facebook.com/IQMEMES0",
           },
           {
             name: "Creative",
@@ -339,7 +339,7 @@ export default function ExMediaLanding() {
           {
             name: "IQ",
             profileImage: "/images/iq-page.jpg",
-            url: "https://www.facebook.com/photo/?fbid=693813509447653&set=a.181055330723476",
+            url: "https://www.facebook.com/IQMEMES0",
           },
           {
             name: "Creative",
